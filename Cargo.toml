@@ -1,0 +1,20 @@
+[package]
+name = "tauon"
+version = "0.0.0"
+authors = ["Barlog <barlog@tanelorn.li>"]
+edition = "2018"
+
+readme = "README.md"
+documentation = "https://docs.rs/tauon"
+repository = "https://github.com/barlog-m/tauon"
+homepage = "https://github.com/barlog-m/tauon"
+license = "MIT"
+description = """
+A micro web framework based on Hyper
+"""
+
+[dependencies]
+
+[profile.release]
+lto = true
+panic = 'abort'
